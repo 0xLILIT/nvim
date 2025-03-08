@@ -13,10 +13,11 @@ end
 vim.opt.rtp:prepend(pckr_path)
 
 require("pckr").add({
+  { "HiPhish/rainbow-delimiters.nvim" },
   {
-    "slugbyte/lackluster.nvim",
+    "aliqyan-21/darkvoid.nvim",
     config = function()
-      vim.cmd.colorscheme("lackluster")
+      vim.cmd.colorscheme("darkvoid")
     end,
   },
   {
@@ -112,7 +113,7 @@ require("pckr").add({
   {
     "eoh-bse/minintro.nvim",
     config = function()
-      require("minintro").setup({ color = "#E9EAE9" })
+      require("minintro").setup({ color = "#E0E2EA" })
     end,
   },
   { "ibhagwan/fzf-lua" },
@@ -123,4 +124,10 @@ require("pckr").add({
     end,
   },
   { "lervag/wiki.vim" },
+  {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup({ preset = "helix" })
+    end,
+  },
 })
