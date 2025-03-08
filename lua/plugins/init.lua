@@ -13,11 +13,18 @@ end
 vim.opt.rtp:prepend(pckr_path)
 
 require("pckr").add({
-  { "HiPhish/rainbow-delimiters.nvim" },
   {
-    "aliqyan-21/darkvoid.nvim",
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
     config = function()
-      vim.cmd.colorscheme("darkvoid")
+      local configs = require("nvim-treesitter.configs")
+
+      configs.setup({
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "javascript", "typescript", "css", "cpp", "html" },
+        sync_install = false,
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
     end,
   },
   {
@@ -128,6 +135,13 @@ require("pckr").add({
     "folke/which-key.nvim",
     config = function()
       require("which-key").setup({ preset = "helix" })
+    end,
+  },
+  { "HiPhish/rainbow-delimiters.nvim" },
+  {
+    "aliqyan-21/darkvoid.nvim",
+    config = function()
+      vim.cmd.colorscheme("darkvoid")
     end,
   },
 })
