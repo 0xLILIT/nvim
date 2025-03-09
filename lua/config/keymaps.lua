@@ -2,6 +2,15 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Diffview
+vim.keymap.set("n", "<leader>dv", function()
+  if next(require("diffview.lib").views) == nil then
+    vim.cmd("DiffviewOpen")
+  else
+    vim.cmd("DiffviewClose")
+  end
+end)
+
 -- Motions
 vim.keymap.set("n", "<esc>", "<cmd>noh<cr>")
 vim.keymap.set({ "n", "v" }, "J", "6j")

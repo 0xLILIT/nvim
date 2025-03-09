@@ -108,6 +108,8 @@ require("pckr").add({
       })
     end,
   },
+  { "sindrets/diffview.nvim" },
+  { "wellle/targets.vim" },
   {
     "windwp/nvim-autopairs",
     config = function()
