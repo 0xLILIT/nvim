@@ -20,7 +20,18 @@ require("pckr").add({
       local configs = require("nvim-treesitter.configs")
 
       configs.setup({
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "javascript", "typescript", "css", "cpp", "html" },
+        ensure_installed = {
+          "c",
+          "lua",
+          "vim",
+          "vimdoc",
+          "javascript",
+          "typescript",
+          "css",
+          "cpp",
+          "html",
+          "markdown",
+        },
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
@@ -54,6 +65,9 @@ require("pckr").add({
           typescript = {
             require("formatter.filetypes.typescript").prettierd,
           },
+          javascript = {
+            require("formatter.filetypes.javascript").prettierd,
+          },
         },
       })
 
@@ -70,6 +84,8 @@ require("pckr").add({
       local servers = {
         lua_ls = {},
         ts_ls = {},
+        emmet_language_server = {},
+        sqlls = { filetypes = { "sql", "javascript", "typescript" } },
       }
 
       local lspconfig = require("lspconfig")
@@ -119,12 +135,6 @@ require("pckr").add({
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
     end,
   },
-  {
-    "eoh-bse/minintro.nvim",
-    config = function()
-      require("minintro").setup({ color = "#E0E2EA" })
-    end,
-  },
   { "ibhagwan/fzf-lua" },
   {
     "stevearc/oil.nvim",
@@ -132,7 +142,6 @@ require("pckr").add({
       require("oil").setup()
     end,
   },
-  { "lervag/wiki.vim" },
   {
     "folke/which-key.nvim",
     config = function()
