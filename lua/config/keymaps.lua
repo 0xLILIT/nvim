@@ -21,10 +21,12 @@ vim.keymap.set({ "n", "v", "o" }, "H", "^")
 vim.keymap.set({ "n", "v", "o" }, "L", "$")
 
 -- -- LSP
--- vim.keymap.set("n", "<leader>hh", vim.lsp.buf.hover, { desc = "Show hover information" })
--- vim.keymap.set("n", "<leader>rr", vim.lsp.buf.rename, { desc = "Rename symbol" })
--- vim.keymap.set("n", "<leader>gD", vim.lsp.buf.definition, { desc = "Jump to definition" })
--- vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, { desc = "Jump to declaration" })
+vim.keymap.set("n", "<leader>hh", vim.lsp.buf.hover, { desc = "Show hover information" })
+vim.keymap.set("n", "<leader>rr", vim.lsp.buf.rename, { desc = "Rename symbol" })
+vim.keymap.set("n", "<leader>gD", vim.lsp.buf.definition, { desc = "Jump to definition" })
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, { desc = "Jump to declaration" })
+vim.keymap.set("n", "<leader>cc", vim.lsp.buf.incoming_calls, { desc = "Show incoming calls" })
+vim.keymap.set("n", "<leader>cC", vim.lsp.buf.outgoing_calls, { desc = "Show outgoing calls" })
 
 -- Snacks.picker
 vim.keymap.set("n", "<leader>fp", "<cmd>FzfLua<cr>", { desc = "Picker" })
@@ -36,6 +38,7 @@ vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>", { desc = "Find pa
 vim.keymap.set("n", "<leader>fG", "<cmd>FzfLua grep<cr>", { desc = "Find pattern" })
 vim.keymap.set("n", "<leader>dd", "<cmd>FzfLua diagnostics_document<cr>", { desc = "Show document diagnostics" })
 vim.keymap.set("n", "<leader>dd", "<cmd>FzfLua diagnostics_workspace<cr>", { desc = "Show workspace diagnostics" })
+vim.keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<cr>", { desc = "Find word under cursor" })
 
 -- Oil
 vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
