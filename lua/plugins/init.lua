@@ -82,7 +82,9 @@ require("pckr").add({
     "neovim/nvim-lspconfig",
     config = function()
       local servers = {
-        lua_ls = {},
+        lua_ls = { settings = { Lua = { workspace = { library = {
+          "${3rd}/love2d/library",
+        } } } } },
         ts_ls = {},
         emmet_language_server = {},
         sqlls = { filetypes = { "sql", "javascript", "typescript" } },
