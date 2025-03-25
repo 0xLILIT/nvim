@@ -68,6 +68,10 @@ require("pckr").add({
           javascript = {
             require("formatter.filetypes.javascript").prettierd,
           },
+          html = { require("formatter.filetypes.html").prettierd },
+          css = {
+            require("formatter.filetypes.css").prettierd,
+          },
         },
       })
 
