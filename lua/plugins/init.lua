@@ -154,11 +154,41 @@ require("pckr").add({
       require("which-key").setup({ preset = "helix" })
     end,
   },
+  {
+    "folke/persistence.nvim",
+    config = function()
+      require("persistence").setup()
+    end,
+  },
+  {
+    "ggandor/leap.nvim",
+    config = function()
+      require("leap").create_default_mappings()
+    end,
+    requires = { "tpope/vim-repeat" },
+  },
+  {
+    "ggandor/flit.nvim",
+    config = function()
+      require("flit").setup()
+    end,
+  },
   { "HiPhish/rainbow-delimiters.nvim" },
   {
     "aliqyan-21/darkvoid.nvim",
     config = function()
       vim.cmd.colorscheme("darkvoid")
     end,
+  },
+  {
+    "jiaoshijie/undotree",
+    config = function()
+      require("undotree").setup()
+      -- Undotree
+      vim.keymap.set("n", "<leader>uu", require("undotree").toggle, { noremap = true, silent = true })
+    end,
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
   },
 })

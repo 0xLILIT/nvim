@@ -13,10 +13,10 @@ end)
 
 -- Motions
 vim.keymap.set("n", "<esc>", "<cmd>noh<cr>")
-vim.keymap.set({ "n", "v" }, "J", "6j")
-vim.keymap.set({ "n", "v" }, "K", "6k")
--- vim.keymap.set({ "n", "v", "o" }, "J", "}")
--- vim.keymap.set({ "n", "v", "o" }, "K", "{")
+-- vim.keymap.set({ "n", "v" }, "J", "6j")
+-- vim.keymap.set({ "n", "v" }, "K", "6k")
+vim.keymap.set({ "n", "v", "o" }, "J", "}")
+vim.keymap.set({ "n", "v", "o" }, "K", "{")
 vim.keymap.set({ "n", "v", "o" }, "H", "^")
 vim.keymap.set({ "n", "v", "o" }, "L", "$")
 
@@ -27,6 +27,7 @@ vim.keymap.set("n", "<leader>gD", vim.lsp.buf.definition, { desc = "Jump to defi
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, { desc = "Jump to declaration" })
 vim.keymap.set("n", "<leader>cc", vim.lsp.buf.incoming_calls, { desc = "Show incoming calls" })
 vim.keymap.set("n", "<leader>cC", vim.lsp.buf.outgoing_calls, { desc = "Show outgoing calls" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 
 -- Snacks.picker
 vim.keymap.set("n", "<leader>fp", "<cmd>FzfLua<cr>", { desc = "Picker" })
@@ -42,6 +43,27 @@ vim.keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<cr>", { desc = "Find w
 
 -- Oil
 vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
+
+-- Persistence
+-- load the session for the current directory
+vim.keymap.set("n", "<leader>qq", function()
+  require("persistence").load()
+end, { desc = "Load session for current directory" })
+
+-- select a session to load
+vim.keymap.set("n", "<leader>qS", function()
+  require("persistence").select()
+end, { desc = "Select session to load" })
+
+-- load the last session
+vim.keymap.set("n", "<leader>ql", function()
+  require("persistence").load({ last = true })
+end, { desc = "Load last session" })
+
+-- stop Persistence => session won't be saved on exit
+vim.keymap.set("n", "<leader>qd", function()
+  require("persistence").stop()
+end, { desc = "Stop persistence" })
 
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
