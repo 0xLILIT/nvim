@@ -22,6 +22,7 @@ require("pckr").add({
       configs.setup({
         ensure_installed = {
           "c",
+          "cpp",
           "lua",
           "vim",
           "vimdoc",
@@ -45,6 +46,7 @@ require("pckr").add({
       require("formatter").setup({
         logging = true,
         filetype = {
+          cpp = { require("formatter.filetypes.cpp").clangformat },
           lua = {
             function()
               return {
@@ -86,11 +88,15 @@ require("pckr").add({
     "neovim/nvim-lspconfig",
     config = function()
       local servers = {
-        lua_ls = { settings = { Lua = { workspace = { library = {
-          "${3rd}/love2d/library",
-        } } } } },
+        lua_ls = {
+          filetypes = { "lua" },
+          settings = { Lua = { workspace = { library = {
+            "${3rd}/love2d/library",
+          } } } },
+        },
         ts_ls = {},
         emmet_language_server = {},
+        clangd = {},
         sqlls = { filetypes = { "sql", "javascript", "typescript" } },
       }
 
