@@ -4,6 +4,7 @@ return {
 	opts = {
 		options = {
 			theme = "eyes",
+			disabled_filetypes = { "alpha" },
 		},
 		sections = {
 			lualine_a = { "mode" },
