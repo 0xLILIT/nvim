@@ -28,5 +28,6 @@ vim.opt.relativenumber = true
 -- Other
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.o.winborder = "rounded"
 
 vim.diagnostic.config({ virtual_lines = true, virtual_text = false })
