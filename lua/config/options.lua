@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 -- Create undo directory if it doesn't exist
 -- local undo_dir = "/Users/frejatornlund/.vim-undo-dir"
 -- local uv = vim.loop
@@ -9,6 +10,9 @@
 -- Set the undo directory and enable persistent undo
 -- vim.opt.undodir = undo_dir
 -- vim.opt.undofile = true
+
+vim.opt.undofile = true -- Enable persistent undo
+vim.opt.undodir = vim.fn.expand("~/.undodir") -- Set custom undo directory
 
 -- Indenting
 vim.opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character

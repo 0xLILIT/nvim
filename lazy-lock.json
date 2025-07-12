@@ -12,11 +12,15 @@
   "lualine.nvim": { "branch": "master", "commit": "a94fc68960665e54408fe37dcf573193c4ce82c9" },
   "mason.nvim": { "branch": "main", "commit": "8024d64e1330b86044fed4c8494ef3dcd483a67c" },
   "nvim-lspconfig": { "branch": "master", "commit": "dbdb80d3bd311989d21029c63918d67a786d5013" },
+  "nvim-origami": { "branch": "main", "commit": "9dc6ab34e7835695989772eb2c6ea91541a86c5d" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "a1366758b3a232036dc97be8ca41184aa3f50506" },
   "oil.nvim": { "branch": "master", "commit": "bbad9a76b2617ce1221d49619e4e4b659b3c61fc" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "55ad4fb76ab68460f700599b7449385f0c4e858e" },
+  "smear-cursor.nvim": { "branch": "main", "commit": "4a0f7ac265b4ed1ce4d0af2afc13072763bfa691" },
   "snacks.nvim": { "branch": "main", "commit": "bc0630e43be5699bb94dadc302c0d21615421d93" },
+  "time-machine.nvim": { "branch": "main", "commit": "0ae0be9607cbd4c74138b41ae0e94a3df2e9ec24" },
+  "tiny-glimmer.nvim": { "branch": "main", "commit": "60a632536e0741c9cecb892f89fbe65a270dc7c7" },
   "trailblazer.nvim": { "branch": "main", "commit": "5c0e3ac01e227bb9afe428583f29f0ec34801408" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }

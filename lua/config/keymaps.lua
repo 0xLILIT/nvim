@@ -10,6 +10,8 @@ vim.keymap.set({ "n", "v", "o" }, "J", "}")
 vim.keymap.set({ "n", "v", "o" }, "K", "{")
 vim.keymap.set({ "n", "v", "o" }, "H", "^")
 vim.keymap.set({ "n", "v", "o" }, "L", "$")
+vim.keymap.set({ "n", "v" }, "√", "+")
+vim.keymap.set({ "n", "v" }, "ª", "-")
 
 -- LSPSaga
 vim.keymap.set("n", "<leader>hh", "<cmd>Lspsaga hover_doc<cr>", { desc = "Show hover information" })
