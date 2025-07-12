@@ -5,9 +5,9 @@
   "blink.cmp": { "branch": "main", "commit": "9bcb14b43852a6f2bfd5ac9ef29cb5cf09b1b39b" },
   "conform.nvim": { "branch": "master", "commit": "973f3cb73887d510321653044791d7937c7ec0fa" },
   "eyes.nvim": { "branch": "master", "commit": "5b926c7ad4e24f6cc445fb2eb61e053e667d2e7d" },
-  "flash.nvim": { "branch": "main", "commit": "3c942666f115e2811e959eabbdd361a025db8b63" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "leap.nvim": { "branch": "main", "commit": "87835bf56c3162bc0508065ccb127b9f565b8a95" },
   "lsp_lines.nvim": { "branch": "main", "commit": "a92c755f182b89ea91bd8a6a2227208026f27b4d" },
   "lspsaga.nvim": { "branch": "main", "commit": "8efe00d6aed9db6449969f889170f1a7e43101a1" },
   "lualine.nvim": { "branch": "master", "commit": "a94fc68960665e54408fe37dcf573193c4ce82c9" },
@@ -23,5 +23,7 @@
   "time-machine.nvim": { "branch": "main", "commit": "0ae0be9607cbd4c74138b41ae0e94a3df2e9ec24" },
   "tiny-glimmer.nvim": { "branch": "main", "commit": "60a632536e0741c9cecb892f89fbe65a270dc7c7" },
   "trailblazer.nvim": { "branch": "main", "commit": "5c0e3ac01e227bb9afe428583f29f0ec34801408" },
+  "vague.nvim": { "branch": "main", "commit": "53b6060efb85a18c4587a39e5fb2c1071c719ab2" },
+  "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }

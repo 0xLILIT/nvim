@@ -6,6 +6,6 @@ return {
 	priority = 1000,
 	opts = {},
 	config = function()
-		vim.cmd.colorscheme("eyes")
+		-- vim.cmd.colorscheme("eyes")
 	end,
 }
