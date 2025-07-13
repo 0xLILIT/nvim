@@ -24,5 +24,6 @@ return {
 		end
 		leap.opts.equivalence_classes = { " \t\r\n", "([{", ")]}", "'\"`" }
 		require("leap.user").set_repeat_keys("<enter>", "<backspace>")
+		vim.api.nvim_set_hl(0, "LeapLabel", { default = true, link = "HopNextKey" })
 	end,
 }
