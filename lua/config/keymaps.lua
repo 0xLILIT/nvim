@@ -21,8 +21,8 @@ vim.keymap.set("n", "<leader>gd", "<cmd>Lspsaga peek_definition<cr>", { desc = "
 vim.keymap.set("n", "<leader>cc", "<cmd>Lspsaga incoming_calls<cr>", { desc = "Show incoming calls" })
 vim.keymap.set("n", "<leader>cC", "<cmd>Lspsaga outgoing_calls<cr>", { desc = "Show outgoing calls" })
 vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "Code action" })
-vim.keymap.set("n", "<leader>dD", "<cmd>Lspsaga show_line_diagnostics<cr>", { desc = "Show line diagnostics" })
-vim.keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_buf_diagnostics<cr>", { desc = "Show buffer diagnostics" })
+vim.keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<cr>", { desc = "Show line diagnostics" })
+vim.keymap.set("n", "<leader>dD", "<cmd>Lspsaga show_buf_diagnostics<cr>", { desc = "Show buffer diagnostics" })
 
 -- Oil
 vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })

@@ -1,6 +1,7 @@
-return {
-	"HiPhish/rainbow-delimiters.nvim",
-	lazy = false,
-	main = "rainbow-delimiters.setup",
-	opts = {},
-}
+return {}
+-- return {
+-- 	"HiPhish/rainbow-delimiters.nvim",
+-- 	lazy = false,
+-- 	main = "rainbow-delimiters.setup",
+-- 	opts = {},
+-- }

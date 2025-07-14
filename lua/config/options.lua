@@ -23,11 +23,11 @@ vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
--- vim.opt.showmode = false
+vim.opt.cursorline = true
 
 -- Other
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.o.winborder = "rounded"
 
-vim.diagnostic.config({ virtual_lines = true, virtual_text = false })
+-- vim.diagnostic.config({ virtual_lines = true, virtual_text = false })
