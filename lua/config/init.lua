@@ -15,12 +15,3 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 
 local hl = vim.api.nvim_set_hl
 hl(0, "BlinkCmpGhostText", { fg = "#999999", bg = "#343434" })
-
-local neocodeium = require("neocodeium")
-
-vim.api.nvim_create_autocmd("User", {
-	pattern = "BlinkCmpMenuOpen",
-	callback = function()
-		neocodeium.clear()
-	end,
-})
