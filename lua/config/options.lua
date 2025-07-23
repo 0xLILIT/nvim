@@ -1,16 +1,4 @@
----@diagnostic disable: undefined-global
--- Create undo directory if it doesn't exist
--- local undo_dir = "/Users/frejatornlund/.vim-undo-dir"
--- local uv = vim.loop
-
--- if not uv.fs_stat(undo_dir) then
---   uv.fs_mkdir(undo_dir, 700)
--- end
-
--- Set the undo directory and enable persistent undo
--- vim.opt.undodir = undo_dir
--- vim.opt.undofile = true
-
+-- Persistent undo
 vim.opt.undofile = true -- Enable persistent undo
 vim.opt.undodir = vim.fn.expand("~/.undodir") -- Set custom undo directory
 
@@ -28,6 +16,5 @@ vim.opt.cursorline = true
 -- Other
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.o.winborder = "rounded"
-
--- vim.diagnostic.config({ virtual_lines = true, virtual_text = false })
+vim.opt.winborder = "single"
+vim.opt.scrolloff = 12

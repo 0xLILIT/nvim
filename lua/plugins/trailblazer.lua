@@ -1,8 +1,8 @@
 return {
 	"https://github.com/LeonHeidelbach/trailblazer.nvim",
 	opts = {
-		force_mappings = { -- rename this to "force_mappings" to completely override default mappings and not merge with them
-			nv = { -- Mode union: normal & visual mode. Can be extended by adding i, x, ...
+		force_mappings = {
+			nv = {
 				motions = {
 					new_trail_mark = "ﬁ",
 					track_back = "›",

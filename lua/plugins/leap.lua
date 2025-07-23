@@ -15,10 +15,6 @@ return {
 		leap.add_default_mappings(true)
 		vim.keymap.del({ "x", "o" }, "x")
 		vim.keymap.del({ "x", "o" }, "X")
-
-		-- Exclude whitespace and the middle of alphabetic words from preview:
-		--   foobar[baaz] = quux
-		--   ^----^^^--^^-^-^--^
 		leap.opts.preview_filter = function(ch0, ch1, ch2)
 			return not (ch1:match("%s") or ch0:match("%a") and ch1:match("%a") and ch2:match("%a"))
 		end

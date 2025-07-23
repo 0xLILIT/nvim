@@ -1,7 +1,7 @@
 return {
 	"https://github.com/numToStr/FTerm.nvim",
 	opts = { {
-		border = "rounded",
+		border = "single",
 		dimensions = {
 			height = 0.75,
 			width = 0.75,
