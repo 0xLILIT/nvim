@@ -16,5 +16,5 @@ vim.opt.cursorline = true
 -- Other
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.winborder = "single"
+vim.opt.winborder = "rounded"
 vim.opt.scrolloff = 12
