@@ -18,3 +18,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.winborder = "rounded"
 vim.opt.scrolloff = 12
+
+vim.g.markdown_fenced_languages = {
+	"ts=typescript",
+}
