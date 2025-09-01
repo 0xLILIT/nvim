@@ -23,8 +23,8 @@ vim.keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<cr>", { de
 vim.keymap.set("n", "<leader>dD", "<cmd>Lspsaga show_buf_diagnostics<cr>", { desc = "Show buffer diagnostics" })
 
 -- Oil
--- vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
-vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
+vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
+-- vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
 
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
