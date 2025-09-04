@@ -1,5 +1,20 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	dependencies = {
+		{
+			"OXY2DEV/markview.nvim",
+			lazy = false,
+
+			-- For `nvim-treesitter` users.
+			priority = 49,
+
+			-- For blink.cmp's completion
+			-- source
+			-- dependencies = {
+			--     "saghen/blink.cmp"
+			-- },
+		},
+	},
 	build = ":TSUpdate",
 	config = function()
 		local configs = require("nvim-treesitter.configs")
@@ -12,9 +27,6 @@ return {
 				"lua",
 				"vim",
 				"vimdoc",
-				"query",
-				"elixir",
-				"heex",
 				"javascript",
 				"html",
 				"css",
@@ -23,6 +35,11 @@ return {
 				"sql",
 				"php",
 				"json",
+				"markdown",
+				"markdown_inline",
+				"latex",
+				"typst",
+				"yaml",
 			},
 			sync_install = false,
 			highlight = { enable = true },
