@@ -26,6 +26,10 @@ vim.keymap.set("n", "<leader>dD", "<cmd>Lspsaga show_buf_diagnostics<cr>", { des
 vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
 -- vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
 
+-- Diffview
+vim.keymap.set("n", "dvo", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })
+vim.keymap.set("n", "dvc", "<cmd>DiffviewClose<cr>", { desc = "Close Diffview" })
+
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
 vim.keymap.set("n", "<C-n>", "<cmd>bnext<cr>")
