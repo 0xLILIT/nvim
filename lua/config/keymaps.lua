@@ -49,7 +49,7 @@ vim.keymap.set("n", "gh", "<cmd>Gitsigns preview_hunk_inline<cr>")
 vim.keymap.set("n", "gH", "<cmd>Gitsigns preview_hunk<cr>")
 
 -- Other
-vim.keymap.set("v", "yc", '"+y')
+vim.keymap.set("v", "<C-c>", '"+y')
 vim.keymap.set("n", "<leader>cs", function()
 	local primary_colorscheme = "emperor"
 	local secondary_colorscheme = "windir"
