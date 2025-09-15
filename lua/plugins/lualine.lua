@@ -3,8 +3,7 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {
 		options = {
-			-- theme = "auto",
-			theme = "zenwritten",
+			theme = "auto",
 			disabled_filetypes = { "alpha" },
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },

@@ -14,11 +14,14 @@ local themes = {
 		priority = 1000,
 		config = function()
 			require("black-metal").setup({
-				theme = "windir",
+				-- theme = "windir",
+				theme = "emperor",
 				variant = "dark",
-				alt_bg = true,
+				-- alt_bg = true,
 			})
 			require("black-metal").load()
+			-- vim.api.nvim_set_hl(0, "String", { fg = "#A9A976" })
+			-- vim.api.nvim_set_hl(0, "Normal", { bg = "#181818" })
 		end,
 	},
 	["vim-ascetic"] = {
@@ -46,4 +49,4 @@ local themes = {
 	},
 }
 
-return themes["zenbones"]
+return themes["black-metal-theme-neovim"]

@@ -42,5 +42,21 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", { remap = true })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { remap = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { remap = true })
 
+-- Gitsigns
+vim.keymap.set("n", "gb", "<cmd>Gitsigns blame_line<cr>")
+vim.keymap.set("n", "gB", "<cmd>Gitsigns blame<cr>")
+vim.keymap.set("n", "gh", "<cmd>Gitsigns preview_hunk_inline<cr>")
+vim.keymap.set("n", "gH", "<cmd>Gitsigns preview_hunk<cr>")
+
 -- Other
 vim.keymap.set("v", "yc", '"+y')
+vim.keymap.set("n", "<leader>cs", function()
+	local primary_colorscheme = "emperor"
+	local secondary_colorscheme = "windir"
+	local cur_colorscheme = vim.g.colors_name or "default"
+	if cur_colorscheme == primary_colorscheme then
+		vim.cmd.colorscheme(secondary_colorscheme)
+	elseif cur_colorscheme == secondary_colorscheme then
+		vim.cmd.colorscheme(primary_colorscheme)
+	end
+end, { desc = "Toggle syntax highlighting" })
