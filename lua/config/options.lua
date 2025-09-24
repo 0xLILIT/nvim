@@ -16,9 +16,9 @@ vim.opt.cursorline = true
 -- Other
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.winborder = "rounded"
+vim.opt.winborder = "single"
 vim.opt.scrolloff = 12
-
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }

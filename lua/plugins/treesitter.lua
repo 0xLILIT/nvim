@@ -22,6 +22,7 @@ return {
 		configs.setup({
 			ensure_installed = {
 				"c",
+				"kotlin",
 				"cpp",
 				"java",
 				"lua",

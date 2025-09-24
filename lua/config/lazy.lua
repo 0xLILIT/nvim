@@ -25,7 +25,7 @@ require("lazy").setup({
 	},
 	-- colorscheme that will be used when installing plugins.
 	-- install = { colorscheme = { "e-ink" } },
-	install = { colorscheme = { "zenwritten" } },
+	install = { colorscheme = { "off" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 })
