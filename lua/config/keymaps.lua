@@ -19,6 +19,7 @@ vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
 -- vim.keymap.set("n", "<C-n>", "<cmd>bnext<cr>")
 -- vim.keymap.set("n", "<C-p>", "<cmd>bprevious<cr>")
 vim.keymap.set("n", "<C-q>", "<cmd>b#<cr>")
+vim.keymap.set("n", "bb", "<cmd>ArenaToggle<cr>", { desc = "Show buffers" })
 
 -- Windows
 vim.keymap.set("n", "<C-h>", "<C-w>h", { remap = true })
@@ -38,14 +39,4 @@ vim.keymap.set("n", "grs", vim.lsp.buf.signature_help, { desc = "Show signature 
 
 -- Other
 vim.keymap.set("v", "<C-c>", '"+y')
-vim.keymap.set("n", "<leader>cs", function()
-	local primary_colorscheme = "emperor"
-	local secondary_colorscheme = "windir"
-	local cur_colorscheme = vim.g.colors_name or "default"
-
-	if cur_colorscheme == primary_colorscheme then
-		vim.cmd.colorscheme(secondary_colorscheme)
-	else
-		vim.cmd.colorscheme(primary_colorscheme)
-	end
-end, { desc = "Toggle colorscheme" })
+vim.keymap.set("n", "ga", "<cmd>GrugFar<cr>", { desc = "Grug" })
