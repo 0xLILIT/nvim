@@ -12,7 +12,11 @@ vim.keymap.set({ "n", "v" }, "√", "+")
 vim.keymap.set({ "n", "v" }, "ª", "-")
 
 -- Oil
-vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
+vim.keymap.set("n", "<leader>e", function()
+	vim.cmd("belowright 20split")
+	vim.cmd("Oil")
+end)
+-- vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
 
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
