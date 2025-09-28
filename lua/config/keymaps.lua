@@ -12,14 +12,14 @@ vim.keymap.set({ "n", "v" }, "√", "+")
 vim.keymap.set({ "n", "v" }, "ª", "-")
 
 -- Oil
-vim.keymap.set("n", "<leader>e", "<cmd>Oil --float<cr>", { desc = "Open Oil" })
+vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open Oil" })
 
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
 -- vim.keymap.set("n", "<C-n>", "<cmd>bnext<cr>")
 -- vim.keymap.set("n", "<C-p>", "<cmd>bprevious<cr>")
 vim.keymap.set("n", "<C-q>", "<cmd>b#<cr>")
-vim.keymap.set("n", "bb", "<cmd>ArenaToggle<cr>", { desc = "Show buffers" })
+vim.keymap.set("n", "<Tab>", "<cmd>ArenaToggle<cr>", { desc = "Show buffers" })
 
 -- Windows
 vim.keymap.set("n", "<C-h>", "<C-w>h", { remap = true })
@@ -39,4 +39,11 @@ vim.keymap.set("n", "grs", vim.lsp.buf.signature_help, { desc = "Show signature 
 
 -- Other
 vim.keymap.set("v", "<C-c>", '"+y')
-vim.keymap.set("n", "ga", "<cmd>GrugFar<cr>", { desc = "Grug" })
+vim.keymap.set("n", "grg", "<cmd>GrugFar<cr>", { desc = "Grug" })
+vim.keymap.set("n", "<Esc>", function()
+	if vim.bo.filetype == "oil" then
+		return "<cmd>bd<cr>"
+	else
+		return "<Esc>"
+	end
+end, { expr = true, silent = true })

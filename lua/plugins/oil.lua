@@ -2,11 +2,16 @@ return {
 	"stevearc/oil.nvim",
 	---@module 'oil'
 	---@type oil.SetupOpts
-	dependencies = { "nvim-tree/nvim-web-devicons" },
 	lazy = false,
 	config = function()
 		local oil = require("oil")
 		oil.setup({
+			columns = {
+				"icon",
+				"permissions",
+				"size",
+				-- "mtime",
+			},
 			keymaps = {
 				-- create a new mapping, gs, to search and replace in the current directory
 				gs = {
@@ -32,6 +37,18 @@ return {
 				},
 			},
 			-- rest of your config
+			float = {
+				border = "single",
+			},
+			progress = {
+				border = "single",
+			},
+			ssh = {
+				border = "single",
+			},
+			keymaps_help = {
+				border = "single",
+			},
 		})
 	end,
 }

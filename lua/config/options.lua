@@ -11,7 +11,7 @@ vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 
 -- Other
 vim.opt.ignorecase = true
@@ -19,6 +19,4 @@ vim.opt.smartcase = true
 vim.opt.winborder = "single"
 vim.opt.scrolloff = 12
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
-vim.g.markdown_fenced_languages = {
-	"ts=typescript",
-}
+vim.opt.timeoutlen = 200
