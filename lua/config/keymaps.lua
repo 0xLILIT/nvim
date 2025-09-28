@@ -20,6 +20,7 @@ end)
 
 -- Buffers
 vim.keymap.set("n", "<C-x>", "<cmd>bdelete<cr>")
+vim.keymap.set("n", "<C-o>", "<cmd>only<cr>")
 -- vim.keymap.set("n", "<C-n>", "<cmd>bnext<cr>")
 -- vim.keymap.set("n", "<C-p>", "<cmd>bprevious<cr>")
 vim.keymap.set("n", "<C-q>", "<cmd>b#<cr>")
